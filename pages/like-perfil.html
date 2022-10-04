@@ -19,49 +19,55 @@
 </head>
 
 <body>
-    <header class="header">
-        <div class="menu-upper">
-            <div class="search-icon">
-                <box-icon name='search'></box-icon>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+        <header class="header">
+            <div class="menu-upper">
+                <div class="search-icon">
+                    <box-icon name='search'></box-icon>
+                </div>
+                <div class="love-icon">
+                    <a href="./pages/like-perfil.html" class="nav-link" target="_self">
+                        <box-icon name='heart'></box-icon>
+                    </a>
+    
+                </div>
+                <div class="sign-icon">
+                    <a href="./pages/like-perfil.html" class="nav-link" target="_self">
+                        <box-icon type='solid' name='arrow-to-right'></box-icon>
+                    </a>
+    
+                </div>
+                <div class="shop-icon">
+                    <a href="../pages/Obras.html" class="nav-link" target="_self">
+                        <box-icon name='shopping-bag'></box-icon>
+                    </a>
+    
+                </div>
             </div>
-            <div class="love-icon">
-                <a href="../pages/like-perfil.html" class="nav-link" target="_self">
-                    <box-icon name='heart'></box-icon>
-                </a>
-
-            </div>
-            <div class="sign-icon">
-                <a href="../pages/like-perfil.html" class="nav-link" target="_self">
-                    <box-icon type='solid' name='arrow-to-right'></box-icon>
-                </a>
-
-            </div>
-            <div class="shop-icon">
-                <a href="../pages/Obras.html" class="nav-link" target="_self">
-                    <box-icon name='shopping-bag'></box-icon>
-                </a>
-
-            </div>
-        </div>
-        <nav class="menu">
-
-            <a href="../index.html" class="logo" target="_self"><img class="imglogo" alt="Logo Sostre Arte"
-                    src="../Assests/png/Sostre Art white.png" /></a>
-            <!-- Navegador con sus secciones -->
-            <a href="../index.html" class="nav-link" target="_self">Inicio</a>
-            <a href="../pages/Nosotras.html" class="nav-link" target="_self">Nosotras</a>
-
-            <a href="../pages/Obras.html" class="nav-link" target="_self">Obras</a>
-
-            <a href="/#Søstre Lovers" class="nav-link" target="_self">Søstre Lovers</a>
-            <a href="../pages/Contacto.html" class="nav-link" target="_self"> Contacto </a>
-
-            <a href="https://www.instagram.com/sostre.arte/" class="nav-link" target="_blank">
-                <box-icon type='logo' name='instagram'></box-icon>
-            </a>
-
-        </nav>
-    </header>
+            <nav class="menu">
+                <input type="checkbox" id="check">
+                <label for="check" class="menu-hamburguesa">
+                    <box-icon name='menu' class="menu-icon"></box-icon>
+                </label>
+                <ul class="nav-menu">
+                    <li><a href="../index.html" class="nav-link" target="_self">Inicio</a></li>
+                    <li><a href="../pages/Nosotras.html" class="nav-link" target="_self">Nosotras</a></li>
+                    <li><a href="../pages/Obras.html" class="nav-link" target="_self">Obras</a></li>
+                    <li><a href="/#Søstre Lovers" class="nav-link" target="_self">Søstre Lovers</a></li>
+                    <li><a href="../pages/Contacto.html" class="nav-link" target="_self">Contacto</a></li>
+                    <li><a href="https://www.instagram.com/sostre.arte/" class="nav-link" target="_blank">
+                            <box-icon type='logo' name='instagram'></box-icon>
+                        </a></li>
+                </ul>
+                <a href="../index.html" class="logo" target="_self"><img class="imglogo" alt="Logo Sostre Arte"
+                        src="../Assests/png/Sostre Art white.png" /></a>
+                <div></div>
+            </nav>
+        </header>
     <!-- Sección Portada -->
     <main class="perfil-background">
         <section class="perfil">
