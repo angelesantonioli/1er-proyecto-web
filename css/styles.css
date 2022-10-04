@@ -813,6 +813,10 @@ h5 {
     .container_lovers {
         margin: 50px;
     }
+
+    .lovers-text {
+        color: black;
+    }
     
     
     /* página Contactos */
@@ -1023,56 +1027,108 @@ h5 {
         background-color: rgba(245, 245, 245, 0.808);
         border-radius: 10px;
         padding: 20px;
-    }
-    
-    .perfil-contenedor1a {
         display: grid;
-        grid-template-columns: 1fr 2fr;
-        grid-template-rows: 1fr;
-        grid-column-gap: 30px;
-        grid-row-gap: 0px;
+        grid-template-areas:
+            "main"
+            "likes";
     }
     
-    .perfil-img {
-        grid-area: 1 / 1 / 2 / 2;
+    .perfil-box {
+        grid-area: main;
+        background-color: white;
+        text-align: center;
+        padding: 40px 90px;
+        color:#1e1e1e;
+        position: relative;
+        border-radius: 20px;
+    }
+
+    .perfil-pic {
+        width: 150px;
+        border-radius: 70%;
+        background: gray;
+        padding: 6px;
     }
     
     .perfil-name {
-        grid-area: 1 / 2 / 2 / 3;
+        text-align: center;
     }
-    
-    .perfil-img img {
-        max-height: 300px;
-        margin: 50px;
-        border-radius: 10%;
+    .perfil-aka {
+        color:#1e1e1e;
+        text-align: center;
     }
-    
-    .perfil-name {
-        padding: 50px;
-    }
-    
-    .perfil-contenedor2 {
+
+    .perfil-box button {
         background-color: grey;
-        border-radius: 10px;
-        margin: 0 30px;
-        padding: 20px;
+        color: #1e1e1e;
+        font-family: 'Lancelot', cursive;
+        border: none;
+        outline: none;
+        box-shadow: 0 5px 10px #1e1e1e7b;
+        padding: 5px 15px;
+        cursor: pointer;
+        border-radius: 20px;
+        transition: all 430ms;
     }
-    
-    .like-carrusel {
+
+    .perfil-box button:hover {
+        background-color: #1e1e1e;
+        color: white;
+        padding: 10px 30px;
+        transition: all 400ms;
+    }
+
+    .perfil-likes {
+        grid-area: likes;
+        max-width: 900px;
+        margin: auto;
+        margin-top: 30px;
         display: flex;
-        background-color: rgba(245, 245, 245, 0.774);
-        padding: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .likes-card {
+        width: 250px;
+        background: white;
+        margin: 10px;
         border-radius: 10px;
-        margin: 20px;
-        justify-content: space-between;
+        transition: all 300ms;
+    }
+
+    .likes-card:hover {
+        width: 300px;
+        transition: all 400ms;
+    }
+
+    .like-title {
+        color: black;
+        font-size: 1rem;
+        font-family: 'Homemade Apple', cursive;
+        text-align: center;
     }
     
-    .like-img {
-        width: 15%;
+    .likes-card img {
+        width: 90%;
         margin: 10px;
         border-radius: 10px;
     }
-    
+
+    .like-input {
+        padding: 10px 40px;
+        margin: 20px;
+        border: none;
+        font-size: 14px;
+        cursor: pointer;
+        border-radius: 8px;
+        transition: all 300ms;
+        justify-content: center;
+    }
+
+    .like-input:hover {
+        background-color: #1e1e1e;
+        color: white;
+    }
     /* página Obras */
     
     .obras-intro {
@@ -1082,8 +1138,6 @@ h5 {
         grid-column-gap: 30px;
         grid-row-gap: 0px;
     }
-
-
     
     .categorias {
         grid-area: 1 / 1 / 2 / 2;
