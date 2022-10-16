@@ -1,0 +1,42 @@
+%typo-portada {
+    color: --$color-primario;
+    font-family: 'Homemade Apple', cursive;
+    font-weight: 400;
+    font-size: 3rem;
+    line-height: 4rem;
+    text-align: center;
+    display: inline-block;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 10px;
+}
+
+%typo-prim {
+    color: --$color-primario;
+    font-family: 'Lancelot', cursive;
+    font-weight: 400;
+}
+
+h2 {
+    @extend %typo-portada;
+}
+
+h3{
+    @extend %typo-prim;
+    font-size: 2rem;
+}
+
+h4 {
+    @extend %typo-prim;
+    font-size: 1.5rem;
+}
+
+h5 {
+    @extend %typo-prim;
+    font-size: 1.2rem;
+}
+
+p {
+    @extend %typo-prim;
+    font-size: 1.2rem;
+}

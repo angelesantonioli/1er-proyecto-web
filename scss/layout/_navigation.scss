@@ -1,0 +1,204 @@
+@media (min-width:320px) and (max-width:1024px) {
+    .menu-upper {
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        width: 100%;
+        height: 1px;
+        padding-top: 5px;
+
+        div {
+            a {
+                box-icon {
+                    fill: $color-primario;
+                    margin: 0 5px;
+                }
+            }
+        }
+    }
+
+    .imglogo {
+        width: 100px;
+        height: 100px;
+        line-height: 80px;
+    }
+
+    .menu {
+        width: 100%;
+        height: 100%;
+    }
+
+    .nav-link {
+        color: $color-secundario;
+        text-decoration: none;
+    }
+
+    .nav-link {
+        color: $color-secundario;
+        text-decoration: none;
+    }
+
+    .menu-hamburguesa {
+        cursor: pointer;
+        font-size: 25px;
+
+    }
+
+    .menu-icon {
+        margin: 20px;
+    }
+
+    .nav-menu {
+        position: fixed;
+        width: 100%;
+        height: 0vh;
+        top: 30vh;
+        background: rgba(0, 0, 0, 0.397);
+        text-align: center;
+        transition: all 1s;
+
+        li {
+            display: none;
+            line-height: 10px;
+            margin: 50px 0;
+            transition: all 2s;
+
+            a {
+                color: $color-secundario;
+                font-size: 16px;
+                text-transform: uppercase;
+                font-weight: 400;
+                color: --$color-secundario;
+                font-family: 'Lancelot', cursive;
+                font-weight: 400;
+                font-size: 1.5rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                svg {
+                    padding: 60px;
+                }
+            }
+        }
+    }
+
+    .nav-menu li a.active,
+    .nav-menu li a:hover {
+        color: $color-hover;
+        transition: 2s;
+    }
+
+    #check {
+        display: none;
+    }
+
+    #check:checked~.nav-menu {
+        height: 100vh;
+    }
+
+    #check:checked~.nav-menu li {
+        display: block;
+    }
+
+    .nav-link-lover {
+        display: block;
+        float: left;
+        width: 20px;
+        height: 20px;
+        visibility: hidden;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .logo {
+        align-items: center;
+        display: flex;
+    }
+
+    .menu-hamburguesa {
+        display: none;
+    }
+
+    #check {
+        display: none;
+    }
+
+    .nav-menu {
+        position: relative;
+        top: 0;
+        background: none;
+        transition: none;
+        text-align: right;
+        margin-right: 50px;
+
+        li {
+            display: inline-block;
+            margin: 0 20px;
+            transition: none;
+
+            a {
+                font-size: 1.5rem;
+                svg {
+                    fill: $color-secundario;
+                }
+            }
+        }
+    }
+
+    .header {
+        background: $color-primario;
+        width: 100%;
+        height: 150px;
+
+    }
+
+    .menu-upper {
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        width: 100%;
+        height: 1px;
+    }
+
+
+    .imglogo {
+        width: 100px;
+        height: 100px;
+        line-height: 80px;
+
+    }
+
+
+    nav {
+        color: $color-secundario;
+        font-size: 1.5rem;
+        font-family: 'Lancelot', cursive;
+        font-weight: 400;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .menu {
+        width: 90%;
+
+        a {
+            margin-top: 100px;
+        }
+    }
+
+
+    .menu .logo {
+        margin-top: 25px;
+    }
+
+    .nav-link {
+        color: $color-secundario;
+        text-decoration: none;
+    }
+
+    .nav-link-lover {
+        text-decoration: none;
+        color: $color-secundario;
+    }
+
+}

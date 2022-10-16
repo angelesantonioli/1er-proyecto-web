@@ -1,0 +1,147 @@
+
+
+.body {
+    @include mobile-lg {
+        display: grid;
+        grid-template-areas:
+            "header"
+            "portada"
+            "main"
+            "contacto"
+            "contacto"
+            "footer";
+    }
+}
+
+.header {
+    @include mobile-lg {
+        grid-area: header;
+    }
+}
+
+.portada {
+    @include mobile-lg {
+        grid-area: portada;
+    }
+}
+
+.contenedormain {
+    @include mobile-lg {
+        grid-area: main;
+    }
+}
+
+.contacto {
+    @include mobile-lg {
+        margin-top: 50px;
+        grid-area: contacto;
+        max-width: 100%;
+        display: flex;
+    }
+}
+
+.banner {
+    @include mobile-lg {
+        grid-area: contacto;
+        height: 60vh;
+        max-width: 100%;
+        background: $color-primario;
+        display: flex;
+    }
+}
+
+.container_lovers {
+    @include mobile-lg {
+        display: none;
+    }
+}
+
+.footer {
+    @include mobile-lg {
+        grid-area: footer;
+    }
+}
+
+.body {
+    @include desktop {
+        display: grid;
+        grid-template-areas:
+            "header"
+            "portada"
+            "main"
+            "contacto"
+            "contacto"
+            "lovers"
+            "footer";
+    }
+}
+
+.header {
+    @include desktop {
+        grid-area: header;
+        background: $color-primario;
+        width: 100%;
+        height: 30vh;
+    }
+}
+
+.portada {
+    @include desktop {
+        grid-area: portada;
+    }
+}
+
+.contenedormain {
+    @include desktop {
+        grid-area: main;
+    }
+}
+
+.contacto {
+    @include desktop {
+        margin-top: 50px;
+        grid-area: contacto;
+        max-width: 100%;
+        display: flex;
+    }
+}
+
+.banner {
+    @include desktop {
+        grid-area: contacto;
+        height: 60vh;
+        max-width: 100%;
+        background: $color-primario;
+        display: flex;
+    }
+}
+
+.container_lovers {
+    @include desktop {
+        grid-area: lovers;
+        text-align: center;
+    }
+}
+
+.tarjeta__container {
+    @include desktop {
+        display: flex;
+        flex-direction: row;
+        max-width: 100vw;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.tarjeta {
+    @include desktop {
+        max-width: 40%;
+        margin: 50px;
+    }
+}
+
+.footer {
+    @include desktop {
+        grid-area: footer;
+    }
+}
