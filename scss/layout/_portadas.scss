@@ -1,0 +1,71 @@
+.contenedormain {
+    background-color: $color-secundario;
+    height: 300vh;
+    position: relative;
+}
+
+.portada {
+    height: 500px;
+    width: 100%;
+    background-image: url(../Assests/img/portada.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+    h2 {
+        color: $color-primario;
+        text-align: center;
+    }
+}
+
+.portada2 {
+    height: 500px;
+    width: 100%;
+    background-image: url(../Assests/img/portada4.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+
+}
+
+.portada3 {
+    height: 500px;
+    width: 100%;
+    background-image: url(../Assests/img/portada3.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &-tittle {
+        color: $color-secundario;
+        text-align: center;
+    }
+}
+
+.portada4 {
+    height: 500px;
+    width: 100%;
+    background-image: url(../Assests/img/portada\ 2.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+    h2 {
+        color: $color-secundario;
+    }
+    img {
+        width: 40%;
+    }
+}

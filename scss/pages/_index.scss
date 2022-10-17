@@ -1,0 +1,105 @@
+.productos__tiendaestilos {
+    margin-left: 50px;
+    a {
+        color: #1e1e1e;
+        text-decoration: none;
+    }
+    p {
+        text-align: right;
+        text-decoration: underline;
+    }
+}
+
+.container-section-tienda {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 100%;
+}
+
+.link_tiendaimg {
+    border-radius: 10%;
+    max-width: 80%;
+    display: flex;
+    box-shadow: 5px 8px 12px black;
+}
+
+.link_tienda p {
+    color: white;
+    font-size: 0.9rem;
+    position: initial;
+    text-align: center;
+
+    text-shadow: 0 0 8px #1e1e1e;
+}
+
+.contacto {
+    margin-top: 50px;
+    display: flex;
+
+    &_container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.div2-img {
+    width: 200px;
+    border-radius: 10%;
+    padding: 10px;
+}
+
+.div1 {
+    display: flex;
+    padding: 20px;
+
+    &-text {
+    font-size: 0.9rem;
+    font-weight: 400;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    }
+}
+
+.boton-c {
+    text-align: center;
+    align-items: center;
+    a {
+        color: white;
+        align-items: center;
+    }
+}
+
+.btn-style {
+    position: relative;
+    padding: 10px 10px;
+    border: none;
+    outline: none;
+    background: #1e1e1e;
+    color: grey;
+    width: 50%;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.banner {
+    height: 60vh;
+    max-width: 100%;
+    background: #1e1e1e;
+    display: flex;
+    img {
+        width: 100%;
+        padding-bottom: 50px;
+        padding-top: 50px;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .banner {
+        height: 100vh;
+    }
+}
