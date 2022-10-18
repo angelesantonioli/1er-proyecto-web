@@ -29,6 +29,7 @@ p, h5, h4, h3 {
 
 h3 {
   font-size: 2rem;
+  margin-left: 15px;
 }
 
 h4 {
@@ -195,6 +196,67 @@ p {
   }
 }
 
+.perfil-contenedor {
+  display: grid;
+  grid-template-areas: "main" "likes";
+}
+
+.perfil-box {
+  grid-area: main;
+}
+
+.perfil-likes {
+  grid-area: likes;
+}
+
+.grid.formulario {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 0px;
+}
+
+.div1-contacto {
+  grid-area: 1/1/2/2;
+}
+
+.div2-contacto {
+  grid-area: 1/2/2/3;
+}
+
+.quienes-somos-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 30px;
+  grid-row-gap: 0px;
+}
+
+.div1-somos {
+  grid-area: 1/1/2/2;
+}
+
+.div2-somos {
+  grid-area: 1/2/2/3;
+}
+
+.obras-intro {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 30px;
+  grid-row-gap: 0px;
+}
+
+.categorias {
+  grid-area: 1/1/2/2;
+}
+
+.categorias-text {
+  grid-area: 1/2/2/3;
+}
+
 @media (min-width: 320px) and (max-width: 1024px) {
   .header {
     background: #1e1e1e;
@@ -232,6 +294,11 @@ p {
   .nav-link {
     color: white;
     text-decoration: none;
+    transition: all 300ms;
+  }
+  .nav-link:hover {
+    font-size: 1.7rem;
+    transition: all 400ms;
   }
   .nav-link {
     color: white;
@@ -362,13 +429,24 @@ p {
   .nav-link {
     color: white;
     text-decoration: none;
+    transition: all 300ms;
+  }
+  .nav-link:hover {
+    font-size: 1.7rem;
+    transition: all 400ms;
   }
   .nav-link-lover {
     text-decoration: none;
     color: white;
+    transition: all 300ms;
+  }
+  .nav-link-lover:hover {
+    color: white;
+    font-size: 1.7rem;
+    transition: all 400ms;
   }
 }
-input {
+.input-upper {
   outline: none;
   box-sizing: border-box;
   position: absolute;
@@ -516,6 +594,457 @@ input {
     font-size: 1.2rem;
   }
 }
+.intro-contact {
+  display: flex;
+  height: 50vh;
+  justify-content: center;
+  margin: 3%;
+  align-items: center;
+  background-color: rgb(207, 213, 213);
+  border-radius: 15px;
+}
+.intro-contact-text {
+  margin: 30px;
+}
+
+@media (min-width: 320px) and (max-width: 1024px) {
+  .container-footer {
+    padding-left: 40px;
+  }
+}
+@media (min-width: 1024px) {
+  .container-footer {
+    padding-left: 130px;
+  }
+}
+
+.div1-contacto h3 {
+  text-align: center;
+}
+.div1-contacto-text {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.div2-contacto h4, .div2-contacto h5 {
+  text-align: center;
+  margin: 20px;
+  color: white;
+}
+.div2-contacto-inputs {
+  text-align: center;
+}
+.div2-contacto-formulario {
+  width: 400px;
+  margin: auto;
+  background-color: #1e1e1e;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+.div2-contacto-formulario input, .div2-contacto-formulario textarea, .div2-contacto-formulario button {
+  width: 100%;
+  padding: 7px;
+  box-sizing: border-box;
+  font-size: 17px;
+  font-family: "Lancelot", cursive;
+  border-radius: 10px;
+  border: none;
+}
+.div2-contacto-formulario textarea {
+  min-height: 100px;
+  max-height: 200px;
+  max-width: 100%;
+}
+
+#boton {
+  background: grey;
+  padding: 20px;
+  margin-top: 5px;
+  transition: all 0.5s ease;
+}
+#boton:hover {
+  cursor: pointer;
+  background: rgb(207, 213, 213);
+  color: #1e1e1e;
+}
+
+.btn btn-primary {
+  text-align: center;
+}
+
+.perfil-background {
+  width: 100%;
+  background-image: url(../Assests/img/portada\ 2.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+}
+
+.perfil-contenedor {
+  width: 1200px;
+  background-color: rgba(245, 245, 245, 0.808);
+  border-radius: 10px;
+  padding: 20px;
+}
+.perfil-box {
+  background-color: white;
+  text-align: center;
+  padding: 40px 90px;
+  color: #1e1e1e;
+  position: relative;
+  border-radius: 20px;
+}
+.perfil-box button {
+  background-color: grey;
+  color: #1e1e1e;
+  font-family: "Lancelot", cursive;
+  border: none;
+  outline: none;
+  box-shadow: 0 5px 10px rgba(30, 30, 30, 0.4823529412);
+  padding: 5px 15px;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: all 430ms;
+}
+.perfil-box button:hover {
+  background-color: #1e1e1e;
+  color: white;
+  padding: 10px 30px;
+  transition: all 400ms;
+}
+.perfil-pic {
+  width: 250px;
+  border-radius: 70%;
+  background: grey;
+  padding: 6px;
+}
+.perfil-likes {
+  max-width: 900px;
+  margin: auto;
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.likes-card {
+  width: 250px;
+  background: white;
+  margin: 10px;
+  border-radius: 10px;
+  transition: all 300ms;
+}
+.likes-card:hover {
+  width: 300px;
+  transition: all 400ms;
+}
+.likes-card img {
+  width: 90%;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.like-title {
+  color: #1e1e1e;
+  font-size: 1rem;
+  font-family: "Homemade Apple", cursive;
+  text-align: center;
+}
+
+.like-input {
+  padding: 10px 40px;
+  margin: 20px;
+  border: none;
+  font-size: 14px;
+  background-color: rgb(207, 213, 213);
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 300ms;
+  justify-content: center;
+}
+.like-input:hover {
+  background-color: #1e1e1e;
+  color: white;
+}
+
+h3 {
+  margin-left: 15px;
+}
+
+.contenedor-categorias {
+  background-color: #1e1e1e;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.contenedor-categorias hr {
+  color: white;
+  width: 100%;
+}
+.contenedor-categorias h3 {
+  color: white;
+}
+.contenedor-categorias ul {
+  display: inline-block;
+  text-align: center;
+}
+.contenedor-categorias ul li {
+  color: white;
+  text-align: center;
+}
+.contenedor-categorias ul li a {
+  text-decoration: none;
+}
+.contenedor-categorias ul li a h3 {
+  color: white;
+  margin: 20px;
+}
+
+.div1-contacto-text {
+  color: #1e1e1e;
+}
+
+.categorias-text {
+  display: flex;
+  align-items: center;
+}
+
+.tarjeta {
+  height: 50vh;
+  width: 90%;
+  overflow: hidden;
+  margin: auto;
+  margin: 5px;
+  padding: 10px 30px;
+  border-radius: 2%;
+  border: 3px solid white;
+  transition: all 0.4s ease-in-out;
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  background: linear-gradient(-135deg, white, coral);
+}
+.tarjeta:hover {
+  height: 80vh;
+  width: 90%;
+  border-radius: 5px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
+}
+.tarjeta__encabezado img {
+  position: relative;
+  border-radius: 5px;
+  display: block;
+  height: 35vh;
+  object-fit: cover;
+  margin: auto;
+  margin-bottom: 10px;
+  transition: all 0.3s ease;
+  border: 5px solid white;
+}
+
+.icon2 {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.portada3-tittle {
+  transition: all 300ms;
+}
+.portada3-tittle:hover {
+  font-size: 2.2rem;
+  transition: all 400ms;
+}
+
+.div1-somos {
+  height: 700px;
+  width: 100%;
+  background-image: url(../Assests/png/Sostre\ Art\ logo2aa.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.div1-somos-background {
+  margin: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.div1-somos-background h3 {
+  color: #1e1e1e;
+  font-size: 2rem;
+  font-weight: 400;
+  text-align: center;
+}
+.div1-somos-text {
+  color: #1e1e1e;
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-align: center;
+}
+.div1-somos-img {
+  border-radius: 10%;
+  height: 50vh;
+  width: 50vh;
+  align-content: center;
+  transition: all 300ms;
+}
+.div1-somos-img:hover {
+  width: 60vh;
+  height: 60vh;
+  transition: all 400ms;
+}
+@media (min-width: 320px) and (max-width: 1024px) {
+  .div1-somos .div1-somos {
+    height: 500px;
+    width: 100%;
+    background-image: url(../Assests/png/Sostre\ Art\ logo2aa.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .div1-somos .div1-somos-background {
+    margin: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .div1-somos .div1-somos-background h3 {
+    color: #1e1e1e;
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-align: center;
+  }
+  .div1-somos .div1-somos-text {
+    color: #1e1e1e;
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+  }
+  .div1-somos .div1-somos-img {
+    border-radius: 10%;
+    height: 30vh;
+    width: 30vh;
+    align-content: center;
+    transition: all 300ms;
+  }
+  .div1-somos .div1-somos-img:hover {
+    width: 35vh;
+    height: 35vh;
+    transition: all 400ms;
+  }
+}
+
+.div2-somos {
+  height: 700px;
+  width: 100%;
+  background-image: url(../Assests/png/Sostre\ Art\ logo2bb.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.div2-somos-background {
+  margin: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.div2-somos-background h3 {
+  color: #1e1e1e;
+  font-size: 2rem;
+  font-weight: 400;
+  text-align: center;
+}
+.div2-somos-text {
+  color: #1e1e1e;
+  font-size: 1.4rem;
+  font-weight: 400;
+  text-align: center;
+}
+.div2-somos-img {
+  border-radius: 10%;
+  height: 50vh;
+  width: 50vh;
+  margin-bottom: 10px;
+  transition: all 300ms;
+}
+.div2-somos-img:hover {
+  width: 60vh;
+  height: 60vh;
+  transition: all 400ms;
+}
+@media (min-width: 320px) and (max-width: 1024px) {
+  .div2-somos .div2-somos {
+    height: 700px;
+    width: 100%;
+    background-image: url(../Assests/png/Sostre\ Art\ logo2bb.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .div2-somos .div2-somos-background {
+    margin: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .div2-somos .div2-somos-background h3 {
+    color: #1e1e1e;
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-align: center;
+  }
+  .div2-somos .div2-somos-text {
+    color: #1e1e1e;
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+  }
+  .div2-somos .div2-somos-img {
+    border-radius: 10%;
+    height: 30vh;
+    width: 30vh;
+    margin-bottom: 10px;
+    transition: all 300ms;
+  }
+  .div2-somos .div2-somos-img:hover {
+    width: 35vh;
+    height: 35vh;
+    transition: all 400ms;
+  }
+}
+
+.portada-tittle {
+  transition: all 300ms;
+}
+.portada-tittle:hover {
+  font-size: 2.1rem;
+  transition: all 400ms;
+  color: white;
+}
+
 .productos__tiendaestilos {
   margin-left: 50px;
 }

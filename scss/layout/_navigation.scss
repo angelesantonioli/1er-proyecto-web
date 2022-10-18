@@ -37,6 +37,11 @@
     .nav-link {
         color: $color-secundario;
         text-decoration: none;
+        transition: all 300ms;
+            &:hover {
+                font-size: 1.7rem;
+                transition: all 400ms;
+            }
     }
 
     .nav-link {
@@ -199,16 +204,26 @@
     .nav-link {
         color: $color-secundario;
         text-decoration: none;
-    }
-
-    .nav-link-lover {
-        text-decoration: none;
-        color: $color-secundario;
+        transition: all 300ms;
+            &:hover {
+                font-size: 1.7rem;
+                transition: all 400ms;
+            }
+        &-lover {
+            text-decoration: none;
+            color: $color-secundario;
+            transition: all 300ms;
+            &:hover {
+                color: $color-secundario;
+                font-size: 1.7rem;
+                transition: all 400ms;
+            }
+        }
     }
 
 }
 
-input {
+.input-upper {
     outline: none;
     box-sizing: border-box;
     position: absolute;

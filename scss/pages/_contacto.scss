@@ -1,0 +1,83 @@
+.intro-contact {
+    display: flex;
+    height: 50vh;
+    justify-content: center;
+    margin: 3%;
+    align-items: center;
+    background-color: $color-5;
+    border-radius: 15px;
+    &-text {
+    margin: 30px;
+    }
+}
+
+.container-footer {
+    @media (min-width: 320px) and (max-width: 1024px) {
+        padding-left: 40px;
+    }
+    @media (min-width: 1024px) {
+        padding-left: 130px;
+    }
+}
+
+.div1-contacto {
+    h3 {
+        text-align: center;
+    }
+    &-text {
+            text-align: center;
+            margin-bottom: 20px;
+        
+    }
+}
+
+.div2-contacto {
+    h4, h5 {
+        text-align: center;
+        margin: 20px;
+        color: $color-secundario;
+    }
+    &-inputs {
+        text-align: center;
+    }
+    &-formulario {
+        width: 400px;
+        margin: auto;
+        background-color: $color-primario;
+        padding: 10px 20px;
+        box-sizing: border-box;
+        border-radius: 20px;
+        margin-top: 20px;
+        input, textarea, button {
+            width: 100%;
+        padding: 7px;
+        box-sizing: border-box;
+        font-size: 17px;
+        font-family: 'Lancelot', cursive;
+        border-radius: 10px;
+        border: none;
+        }
+        textarea {
+            min-height: 100px;
+        max-height: 200px;
+        max-width: 100%;
+        }
+    }
+}
+
+#boton {
+    background: $color-hover;
+    padding: 20px;
+    margin-top: 5px;
+    transition: all .5s ease;
+    &:hover {
+        cursor: pointer;
+        background: $color-5;
+        color: $color-primario;
+    }
+    
+}
+
+.btn btn-primary {
+    text-align: center;
+}

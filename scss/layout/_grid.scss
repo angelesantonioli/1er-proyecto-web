@@ -145,3 +145,66 @@
         grid-area: footer;
     }
 }
+
+.perfil-contenedor {
+    display: grid;
+    grid-template-areas:
+        "main"
+        "likes";
+}
+
+.perfil-box {
+    grid-area: main;
+}
+
+.perfil-likes {
+    grid-area: likes;
+}
+
+.grid.formulario {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 0px;
+}
+
+.div1-contacto {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.div2-contacto {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.quienes-somos-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 30px;
+    grid-row-gap: 0px;
+}
+
+.div1-somos {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.div2-somos {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.obras-intro {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 30px;
+    grid-row-gap: 0px;
+}
+
+.categorias {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.categorias-text {
+    grid-area: 1 / 2 / 2 / 3;
+}

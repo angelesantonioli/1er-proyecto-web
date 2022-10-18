@@ -1,0 +1,104 @@
+.perfil-background {
+    width: 100%;
+    background-image: url(../Assests/img/portada\ 2.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+
+.perfil {
+    &-contenedor {
+        width: 1200px;
+        background-color: rgba(245, 245, 245, 0.808);
+        border-radius: 10px;
+        padding: 20px;
+    }
+
+    &-box {
+        background-color: $color-secundario;
+        text-align: center;
+        padding: 40px 90px;
+        color: $color-primario;
+        position: relative;
+        border-radius: 20px;
+
+        button {
+            background-color: $color-hover;
+            color: $color-primario;
+            font-family: 'Lancelot', cursive;
+            border: none;
+            outline: none;
+            box-shadow: 0 5px 10px #1e1e1e7b;
+            padding: 5px 15px;
+            cursor: pointer;
+            border-radius: 20px;
+            transition: all 430ms;
+
+            &:hover {
+                background-color: $color-primario;
+                color: $color-secundario;
+                padding: 10px 30px;
+                transition: all 400ms;
+            }
+        }
+    }
+
+    &-pic {
+        width: 250px;
+        border-radius: 70%;
+        background: $color-hover;
+        padding: 6px;
+    }
+
+    &-likes {
+        max-width: 900px;
+        margin: auto;
+        margin-top: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+.likes-card {
+    width: 250px;
+    background: $color-secundario;
+    margin: 10px;
+    border-radius: 10px;
+    transition: all 300ms;
+    &:hover {
+        width: 300px;
+        transition: all 400ms;
+    }
+    img {
+        width: 90%;
+        margin: 10px;
+        border-radius: 10px;
+    }
+}
+.like-title {
+    color: $color-primario;
+    font-size: 1rem;
+    font-family: 'Homemade Apple', cursive;
+    text-align: center;
+}
+
+.like-input {
+    padding: 10px 40px;
+    margin: 20px;
+    border: none;
+    font-size: 14px;
+    background-color: $color-5;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 300ms;
+    justify-content: center;
+    &:hover {
+        background-color: $color-primario;
+        color: $color-secundario;
+    }
+}
