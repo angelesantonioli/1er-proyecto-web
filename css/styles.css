@@ -66,6 +66,40 @@ p {
   padding-top: 20px;
 }
 
+.social-container {
+  display: flex;
+  height: 10vh;
+  align-items: center;
+  justify-content: center;
+}
+.social-container-icon {
+  padding: 50px;
+}
+.social-container ul:hover a {
+  filter: blur(2px);
+}
+.social-container ul li {
+  display: inline-block;
+  margin: 0 15px;
+  width: 49px;
+  height: 40px;
+  text-align: center;
+}
+.social-container ul li a {
+  display: block;
+  padding: 0 10px;
+  background: #1e1e1e;
+  line-height: 50px;
+  font-size: 18px;
+  box-shadow: 0 3px 5px 0px rgba(0, 0, 0, 0.2);
+  transition: 0.2s;
+}
+.social-container ul li a:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 0.4);
+  filter: none;
+}
+
 @media (min-width: 320px) and (max-width: 1024px) {
   .body {
     display: grid;
@@ -668,6 +702,10 @@ p {
 
 .btn btn-primary {
   text-align: center;
+}
+
+.footer {
+  margin-top: 50px;
 }
 
 .perfil-background {

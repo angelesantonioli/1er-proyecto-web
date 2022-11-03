@@ -20,3 +20,39 @@
     text-align: center;
     padding-top: 20px;
 }
+
+.social-container {
+    display: flex;
+    height: 10vh;
+    align-items: center;
+    justify-content: center;
+    &-icon {
+        padding: 50px;
+    }
+    ul {
+        &:hover a {
+            filter: blur(2px);
+        }
+        li {
+            display: inline-block;
+            margin: 0 15px;
+            width: 49px;
+            height: 40px;
+            text-align: center;
+            a {
+                display: block;
+                padding: 0 10px;
+                background: $color-primario;
+                line-height: 50px;
+                font-size: 18px;
+                box-shadow: 0 3px 5px 0px rgba(0,0,0, .2);
+                transition: .2s;
+                &:hover {
+                    transform: translateY(-3px) scale(1.05);
+                    box-shadow: 0 5px 5px 0px rgba(0,0,0, .4);
+                    filter: none;
+                }
+            }
+        }
+    }
+}
