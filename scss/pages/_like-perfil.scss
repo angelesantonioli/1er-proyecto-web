@@ -7,12 +7,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 50px;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 .perfil {
     &-contenedor {
-        width: 1200px;
+        width: 100%;
         background-color: rgba(245, 245, 245, 0.808);
         border-radius: 10px;
         padding: 20px;
@@ -23,7 +24,6 @@
         text-align: center;
         padding: 40px 90px;
         color: $color-primario;
-        position: relative;
         border-radius: 20px;
 
         button {
@@ -100,5 +100,12 @@
     &:hover {
         background-color: $color-primario;
         color: $color-secundario;
+    }
+}
+
+@media (min-width:320px) and (max-width:1024px) {
+    .perfil-background {
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
 }

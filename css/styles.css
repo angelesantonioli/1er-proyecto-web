@@ -44,7 +44,7 @@ p {
   font-size: 1.2rem;
 }
 
-.footer {
+.prefooter {
   aspect-ratio: 633/196;
   width: 90%;
   background-image: url(../Assests/img/footer.png);
@@ -53,16 +53,21 @@ p {
   background-size: cover;
 }
 
-@media (min-width: 320px) and (max-width: 1200px) {
-  .footer {
-    aspect-ratio: 633/196;
-    width: 90%;
-    background-image: url(../Assests/img/footer.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+@media (min-width: 320px) and (max-width: 1024px) {
+  .body {
+    position: relative;
+    padding-bottom: 1rem;
   }
 }
+.footer {
+  width: 100%;
+  background-color: grey;
+  padding: 1em 0;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+}
+
 @media (min-width: 320px) and (max-width: 1024px) {
   .body {
     display: grid;
@@ -119,10 +124,14 @@ p {
   }
 }
 
+.body {
+  position: relative;
+  padding-bottom: 1rem;
+}
 @media (min-width: 1024px) {
   .body {
     display: grid;
-    grid-template-areas: "header" "portada" "main" "contacto" "contacto" "lovers" "footer";
+    grid-template-areas: "header" "portada" "main" "contacto" "lovers" "footer";
   }
 }
 
@@ -297,7 +306,7 @@ p {
     transition: all 300ms;
   }
   .nav-link:hover {
-    font-size: 1.7rem;
+    color: grey;
     transition: all 400ms;
   }
   .nav-link {
@@ -427,13 +436,8 @@ p {
     margin-top: 25px;
   }
   .nav-link {
-    color: white;
     text-decoration: none;
-    transition: all 300ms;
-  }
-  .nav-link:hover {
-    font-size: 1.7rem;
-    transition: all 400ms;
+    color: white;
   }
   .nav-link-lover {
     text-decoration: none;
@@ -441,8 +445,7 @@ p {
     transition: all 300ms;
   }
   .nav-link-lover:hover {
-    color: white;
-    font-size: 1.7rem;
+    color: grey;
     transition: all 400ms;
   }
 }
@@ -683,11 +686,12 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 50px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .perfil-contenedor {
-  width: 1200px;
+  width: 100%;
   background-color: rgba(245, 245, 245, 0.808);
   border-radius: 10px;
   padding: 20px;
@@ -697,7 +701,6 @@ p {
   text-align: center;
   padding: 40px 90px;
   color: #1e1e1e;
-  position: relative;
   border-radius: 20px;
 }
 .perfil-box button {
@@ -773,6 +776,12 @@ p {
   color: white;
 }
 
+@media (min-width: 320px) and (max-width: 1024px) {
+  .perfil-background {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
 h3 {
   margin-left: 15px;
 }
@@ -1092,7 +1101,6 @@ h3 {
 .div2-img {
   width: 200px;
   border-radius: 10%;
-  padding: 10px;
 }
 
 .div1 {

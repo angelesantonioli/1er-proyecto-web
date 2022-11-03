@@ -63,13 +63,14 @@
 }
 
 .body {
+    position:relative;
+    padding-bottom: 1rem;
     @include desktop {
         display: grid;
         grid-template-areas:
             "header"
             "portada"
             "main"
-            "contacto"
             "contacto"
             "lovers"
             "footer";

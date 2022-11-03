@@ -39,7 +39,7 @@
         text-decoration: none;
         transition: all 300ms;
             &:hover {
-                font-size: 1.7rem;
+                color: $color-hover;
                 transition: all 400ms;
             }
     }
@@ -202,20 +202,14 @@
     }
 
     .nav-link {
-        color: $color-secundario;
         text-decoration: none;
-        transition: all 300ms;
-            &:hover {
-                font-size: 1.7rem;
-                transition: all 400ms;
-            }
+        color: $color-secundario;
         &-lover {
             text-decoration: none;
             color: $color-secundario;
             transition: all 300ms;
             &:hover {
-                color: $color-secundario;
-                font-size: 1.7rem;
+                color: $color-hover;
                 transition: all 400ms;
             }
         }

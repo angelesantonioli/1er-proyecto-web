@@ -1,8 +1,24 @@
-.footer {
+.prefooter {
     aspect-ratio: 633/196;
     width: 90%;
     background-image: url(../Assests/img/footer.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+}
+
+@media (min-width: 320px) and (max-width: 1024px) {
+    .body {
+        position:relative;
+        padding-bottom: 1rem;
+    }
+}
+
+.footer {
+    width: 100%;
+    background-color: grey;
+    padding: 1em 0;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
 }
